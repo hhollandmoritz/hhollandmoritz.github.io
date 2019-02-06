@@ -1,21 +1,11 @@
 ---
 layout: page
-title: Project 3
-description: a project that redirects to another website
-img:
-redirect: https://unsplash.com
+title: Genetic Dark Matter
+description: Hunting for genes of unknown function in soil.
+img: /assets/img/kyle-ellefson-196125-unsplash.jpg
 ---
 
-Every project has a beautiful feature shocase page. It's easy to include images, in a flexible 3-column grid format. Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: Project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Soil is teaming with life. I'm interested in understanding the ecological distribution of the most abundant genes of unknown function present in soils. 
 
 
 <div class="img_row">

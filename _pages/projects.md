@@ -1,9 +1,13 @@
 ---
 layout: page
 title: projects
+link_name: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description:
 ---
+
+My work ranges from studying how host-microbe interactions in boreal mosses relate to the nitrogen cycle to more theoretical work understanding how local climate conditions influence microbial community assembly microcosms. Below are links to learn more about my current projects.
+
 
 {% for project in site.projects %}
 
