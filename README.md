@@ -12,11 +12,11 @@ $ ./bin/deploy -s development -d gh-pages
 
 2) 
 
-a) [optional] change to the gh-pages branch and merge the master to the gh-pages branch. Then resolve any merge conflicts here first (or decide they don't matter and that you can force the branch merge)
+a) Change to the gh-pages branch and merge the master to the gh-pages branch. Then resolve any merge conflicts here first (or decide they don't matter and that you can force the branch merge). To learn more about the "ours" strategy go [here](https://www.atlassian.com/git/tutorials/using-branches/merge-strategy).
 
 ```bash
 $ git checkout gh-pages
-$ git merge master # merges master branch into the current branch (i.e. gh-pages)
+$ git merge -s ours master # merges master branch into the current branch (i.e. gh-pages) with strategy "ours"; i.e. preferentially keep files from gh-pages - this is what we want since we will effectively be overwriting mastaer with gh-pages each time. 
 ```
 
 b) change to the master branch, and merge the gh-pages branch to the master branch. There should be no merge conflicts if you completed step 2a.
