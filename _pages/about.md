@@ -17,9 +17,11 @@ profile:
         University of Colorado, Boulder <br/>
         216 UCB
         Boulder, CO 80309
+  twitter: false
 
 news: true
 social: true
+
 ---
 
 I am a graduate student at University of Colorado, Boulder studying Ecology and Evolutionary Biology, with a speciality in microbial ecology. I use molecular and computational tools to study how microbial communities form and change in response to external conditions. 

@@ -86,7 +86,6 @@ plugins:
     - jekyll-paginate
     - jekyll/scholar
     - jemoji
-    - jekyll-gist
 
 # Jekyll-Scholar
 scholar:

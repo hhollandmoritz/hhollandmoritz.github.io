@@ -12,7 +12,16 @@ layout: page
         {{ page.profile.address }}
       </div>
     {% endif %}
+      <h2></h2>
+    {% if page.profile.twitter %}
+      <div class='jekyll-twitter-plugin' align="{{ page.profile.align }}" style="border:none;height:200px;border:1px;overflow:scroll">
+        {% twitter https://twitter.com/hhollandmoritz maxwidth=250 limit=5 %}
+      </div>
+{% endif %}
   </div>
 {% endif %}
+
+
+
 
 {{ content }}
