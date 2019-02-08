@@ -2,9 +2,34 @@
 [My Site](https://hhollandmoritz.github.io/)
 
 
+## 1: Workflow for updating development branch and pushing it to github:
+
+1) To change the development (non-compiled) version of the website, first make sure you are working in the ```development``` branch.
+```bash
+$ git checkout development
+```
+
+2) Then make any changes to your files.
+
+__Optional__ 
+
+Use the command below to preview your changes locally.
+
+```bash
+$ bundle exec jekyll serve
+```
+
+3) Finally, add and commit those changes and push them to the development branch on github. 
+
+```bash
+$ git commit -a -m "my update message"
+$ git push
+```
+
 ## Workflow for updating website on github:
 
 1) Deploy the site from the development branch to the gh-pages branch
+
 ```bash
 $ git checkout development # changes you to development branch
 $ ./bin/deploy -s development -d gh-pages
@@ -27,19 +52,6 @@ $ git merge gh-pages
 ```
 
 3) push the changes to the master branch to github
-
-```bash
-$ git push
-```
-
-## Workflow for updating development branch on github:
-
-To change the development (non-compiled) version of the website, first change to the ```development``` branch.
-```bash
-$ git checkout development
-```
-
-Then make any changes. Finally, add and commit those changes (```git commit -a -m "my update message"```) and push them to the development branch on github. 
 
 ```bash
 $ git push
