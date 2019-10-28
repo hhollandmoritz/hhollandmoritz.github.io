@@ -3,7 +3,7 @@ layout: page
 permalink: /teaching/
 title: teaching and educational resources
 link_name: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Educational materials and resources from various projects.
 ---
 
 Below are some of my educational resources and courses. 

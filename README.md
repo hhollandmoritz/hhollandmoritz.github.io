@@ -37,7 +37,7 @@ $ ./bin/deploy -s development -d gh-pages
 
 2) 
 
-a) Change to the gh-pages branch and merge the master to the gh-pages branch. Then resolve any merge conflicts here first (or decide they don't matter and that you can force the branch merge). To learn more about the "ours" strategy go [here](https://www.atlassian.com/git/tutorials/using-branches/merge-strategy).
+  a) Change to the gh-pages branch and merge the master to the gh-pages branch. Then resolve any merge conflicts here first (or decide they don't matter and that you can force the branch merge). To learn more about the "ours" strategy go [here](https://www.atlassian.com/git/tutorials/using-branches/merge-strategy).
 
 ```bash
 $ git checkout gh-pages
@@ -56,5 +56,8 @@ $ git merge gh-pages
 ```bash
 $ git push
 ```
+## Other Editing Notes
+To edit the CV page, open ```_includes/header.html``` in a textfile and edit the link under the "CV link" section.
+
 ## Find more information about this theme and the readme here:
 [https://github.com/alshedivat/al-folio](https://github.com/alshedivat/al-folio)
