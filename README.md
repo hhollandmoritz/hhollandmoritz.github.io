@@ -57,7 +57,15 @@ $ git merge gh-pages
 $ git push
 ```
 ## Other Editing Notes
-To edit the CV page, open ```_includes/header.html``` in a textfile and edit the link under the "CV link" section.
+* To edit the CV page, open ```_includes/header.html``` in a textfile and edit the link under the "CV link" section.
+
+* If you are receiving dependency notifications on Github about site security, you can update the dependencies in jekyll this way:
+
+```bash
+git checkout development
+bundle update
+
+```
 
 ## Find more information about this theme and the readme here:
 [https://github.com/alshedivat/al-folio](https://github.com/alshedivat/al-folio)
