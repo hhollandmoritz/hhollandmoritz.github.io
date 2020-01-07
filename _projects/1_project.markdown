@@ -2,7 +2,7 @@
 layout: page
 title: Boreal Moss Microbiome
 description: Nitrogen fixation in boreal mosses.
-img: /assets/img/2017_06_28_DSC_0080.jpg
+img: /assets/img/2017_06_28_DSC_0080_lowres.jpg
 ---
 
 Mosses play critical roles in boreal and arctic ecosystems. In this project we aim to understand the structure and function of the moss microbial community, the extent to which it is predicitable from moss phylogeny and how microbial community structure influences nitrogen mineralization rates. 
