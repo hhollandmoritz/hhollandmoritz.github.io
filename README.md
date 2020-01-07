@@ -32,7 +32,7 @@ $ git push
 
 ```bash
 $ git checkout development # changes you to development branch
-$ ./bin/deploy -s development -d gh-pages
+$ ./bin/deploy -s development -d gh-pages # this builds the website in the gh-pages branch
 ```
 
 2) 
