@@ -66,6 +66,14 @@ git checkout development
 bundle update
 
 ```
+* To create a blog post, you can design it in the ```_drafts``` folder first. Then when it is ready for real time, move it to the ```_posts``` folder and rename it the publication date first. Then the draft will be published.
+
+To preview a draft post use this command:
+ 
+```bash
+bundle exec jekyll serve --drafts
+```
+
 
 ## Find more information about this theme and the readme here:
 [https://github.com/alshedivat/al-folio](https://github.com/alshedivat/al-folio)
