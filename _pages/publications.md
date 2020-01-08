@@ -7,7 +7,10 @@ description: To see the most current list of publications, check out my <a href=
   For PDFs of papers published during my dissertation, see the Fierer Lab <a href="http://fiererlab.org/publications/" target="_blank">publications page</a>. 
 years: [2019, 2018, 2017, 2014, 2013]
 ---
+<h3  class="pubyear">In the Pipeline</h3>
+{% bibliography -f prpr %}
 
+<h3  class="pubyear">Published</h3>
 {% for y in page.years %}
   <h3 class="year">{{y}}</h3>
   {% bibliography -f papers -q @*[year={{y}}]* %}
