@@ -66,6 +66,12 @@ git checkout development
 bundle update
 
 ```
+* If that doesn't solve the problem, try adding the update to the Gemfile directly and then running:
+
+```bash
+bundle install
+```
+
 * To create a blog post, you can design it in the ```_drafts``` folder first. Then when it is ready for real time, move it to the ```_posts``` folder and rename it the publication date first. Then the draft will be published.
 
 To preview a draft post use this command:
