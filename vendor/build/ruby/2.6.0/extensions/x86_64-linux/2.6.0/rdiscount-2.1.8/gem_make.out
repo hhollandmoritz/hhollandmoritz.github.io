@@ -1,0 +1,351 @@
+current directory: /home/hannah/Documents/Website/hhollandmoritz.github.io/vendor/build/ruby/2.6.0/gems/rdiscount-2.1.8/ext
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20200220-24943-1wyrkiz.rb extconf.rb
+checking for random()... yes
+checking for srandom()... yes
+checking for rand()... yes
+checking for srand()... yes
+checking size of unsigned long... 8
+checking size of unsigned int... 4
+checking size of unsigned int... 4
+creating Makefile
+
+current directory: /home/hannah/Documents/Website/hhollandmoritz.github.io/vendor/build/ruby/2.6.0/gems/rdiscount-2.1.8/ext
+make "DESTDIR=" clean
+rm -f 
+rm -f rdiscount.so  *.o  *.bak mkmf.log .*.time
+
+current directory: /home/hannah/Documents/Website/hhollandmoritz.github.io/vendor/build/ruby/2.6.0/gems/rdiscount-2.1.8/ext
+make "DESTDIR="
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o Csio.o -c Csio.c
+In file included from Csio.c:4:
+Csio.c: In function ‘Csputc’:
+cstring.h:22:24: warning: operation on ‘iot->size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+Csio.c:14:5: note: in expansion of macro ‘EXPAND’
+   14 |     EXPAND(*iot) = c;
+      |     ^~~~~~
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o amalloc.o -c amalloc.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o basename.o -c basename.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o css.o -c css.c
+In file included from css.c:16:
+css.c: In function ‘mkd_css’:
+cstring.h:22:24: warning: operation on ‘f.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+css.c:57:6: note: in expansion of macro ‘EXPAND’
+   57 |      EXPAND(f) = 0;
+      |      ^~~~~~
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o docheader.o -c docheader.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o dumptree.o -c dumptree.c
+In file included from markdown.h:4,
+                 from dumptree.c:8:
+dumptree.c: In function ‘pushpfx’:
+cstring.h:22:24: warning: operation on ‘sp->size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+dumptree.c:44:24: note: in expansion of macro ‘EXPAND’
+   44 |     struct frame *q = &EXPAND(*sp);
+      |                        ^~~~~~
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o emmatch.o -c emmatch.c
+In file included from emmatch.c:16:
+emmatch.c: In function ‘emfill’:
+cstring.h:22:24: warning: operation on ‘p->b_text.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+emmatch.c:79:4: note: in expansion of macro ‘EXPAND’
+   79 |    EXPAND(p->b_text) = p->b_char;
+      |    ^~~~~~
+emmatch.c: In function ‘emmatch’:
+emmatch.c:113:18: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  113 |     case 2: if ( e = empair(f,first,last,match=2) )
+      |                  ^
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o flags.o -c flags.c
+flags.c: In function ‘mkd_flags_are’:
+flags.c:49:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   49 |  if ( not = (*name == '!') ) {
+      |       ^~~
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o generate.o -c generate.c
+In file included from generate.c:16:
+generate.c: In function ‘push’:
+cstring.h:22:24: warning: operation on ‘f->in.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+generate.c:37:2: note: in expansion of macro ‘EXPAND’
+   37 |  EXPAND(f->in) = *bfr++;
+      |  ^~~~~~
+generate.c: In function ‘pushc’:
+cstring.h:22:24: warning: operation on ‘f->in.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+generate.c:47:5: note: in expansion of macro ‘EXPAND’
+   47 |     EXPAND(f->in) = c;
+      |     ^~~~~~
+generate.c: In function ‘Qchar’:
+cstring.h:22:24: warning: operation on ‘f->Q.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+generate.c:134:9: note: in expansion of macro ‘EXPAND’
+  134 |  cur = &EXPAND(f->Q);
+      |         ^~~~~~
+cstring.h:22:24: warning: operation on ‘cur->b_text.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+generate.c:141:5: note: in expansion of macro ‘EXPAND’
+  141 |     EXPAND(cur->b_text) = c;
+      |     ^~~~~~
+generate.c: In function ‘Qem’:
+cstring.h:22:24: warning: operation on ‘f->Q.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+generate.c:186:17: note: in expansion of macro ‘EXPAND’
+  186 |     block *p = &EXPAND(f->Q);
+      |                 ^~~~~~
+cstring.h:22:24: warning: operation on ‘f->Q.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+generate.c:193:13: note: in expansion of macro ‘EXPAND’
+  193 |     memset(&EXPAND(f->Q), 0, sizeof(block));
+      |             ^~~~~~
+generate.c: In function ‘linkyformat’:
+generate.c:650:15: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  650 |     else if ( tag = pseudo(ref->link) ) {
+      |               ^~~
+generate.c: In function ‘linkylinky’:
+generate.c:744:8: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  744 |   if ( ref = bsearch(&key, T(f->footnotes->note),
+      |        ^~~
+In file included from generate.c:16:
+generate.c: In function ‘printtable’:
+cstring.h:22:24: warning: operation on ‘align.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+generate.c:1548:2: note: in expansion of macro ‘EXPAND’
+ 1548 |  EXPAND(align) = it;
+      |  ^~~~~~
+cstring.h:22:24: warning: operation on ‘align.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+generate.c:1561:6: note: in expansion of macro ‘EXPAND’
+ 1561 |      EXPAND(align) = a_NONE;
+      |      ^~~~~~
+generate.c: In function ‘mkd_document’:
+cstring.h:22:24: warning: operation on ‘p->ctx->out.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+generate.c:1820:6: note: in expansion of macro ‘EXPAND’
+ 1820 |      EXPAND(p->ctx->out) = 0;
+      |      ^~~~~~
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o github_flavoured.o -c github_flavoured.c
+In file included from github_flavoured.c:15:
+github_flavoured.c: In function ‘gfm_populate’:
+cstring.h:22:24: warning: operation on ‘line.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+github_flavoured.c:47:3: note: in expansion of macro ‘EXPAND’
+   47 |   EXPAND(line) = ' ';
+      |   ^~~~~~
+cstring.h:22:24: warning: operation on ‘line.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+github_flavoured.c:48:3: note: in expansion of macro ‘EXPAND’
+   48 |   EXPAND(line) = ' ';
+      |   ^~~~~~
+cstring.h:22:24: warning: operation on ‘line.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+github_flavoured.c:54:6: note: in expansion of macro ‘EXPAND’
+   54 |      EXPAND(line) = c;
+      |      ^~~~~~
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o html5.o -c html5.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o markdown.o -c markdown.c
+markdown.c: In function ‘commentblock’:
+markdown.c:260:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  260 |  if ( end = strstr(T(t->text), "-->") ) {
+      |       ^~~
+markdown.c: In function ‘htmlblock’:
+markdown.c:308:8: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  308 |   if ( closing = (c == '/') ) c = flogetc(&f);
+      |        ^~~~~~~
+markdown.c: In function ‘is_extra_dt’:
+markdown.c:482:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  482 |  if ( x=is_extra_dt(t->next, clip) )
+      |       ^
+markdown.c: In function ‘isdefinition’:
+markdown.c:496:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  496 |     if ( ret = is_discount_dt(t,clip) )
+      |          ^~~
+markdown.c: In function ‘quoteblock’:
+markdown.c:823:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  823 |  if ( p->ident = malloc(4+strlen(prefix)+S(q->text)) )
+      |       ^
+markdown.c: In function ‘definition_block’:
+markdown.c:911:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  911 |  if ( para = (text != q->next) )
+      |       ^~~~
+markdown.c:934:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  934 |  if ( para = (q != text) ) {
+      |       ^~~~
+markdown.c: In function ‘enumerated_block’:
+markdown.c:974:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  974 |  if ( para = (q != text) ) {
+      |       ^~~~
+In file included from markdown.c:16:
+markdown.c: In function ‘addfootnote’:
+cstring.h:22:24: warning: operation on ‘f->footnotes->note.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+markdown.c:1011:23: note: in expansion of macro ‘EXPAND’
+ 1011 |     Footnote *foot = &EXPAND(f->footnotes->note);
+      |                       ^~~~~~
+cstring.h:22:24: warning: operation on ‘foot->tag.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+markdown.c:1019:2: note: in expansion of macro ‘EXPAND’
+ 1019 |  EXPAND(foot->tag) = T(p->text)[j];
+      |  ^~~~~~
+cstring.h:22:24: warning: operation on ‘foot->tag.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+markdown.c:1021:5: note: in expansion of macro ‘EXPAND’
+ 1021 |     EXPAND(foot->tag) = 0;
+      |     ^~~~~~
+cstring.h:22:24: warning: operation on ‘foot->title.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+markdown.c:1028:6: note: in expansion of macro ‘EXPAND’
+ 1028 |      EXPAND(foot->title) = T(p->text)[j++];
+      |      ^~~~~~
+cstring.h:22:24: warning: operation on ‘foot->link.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+markdown.c:1033:2: note: in expansion of macro ‘EXPAND’
+ 1033 |  EXPAND(foot->link) = T(p->text)[j++];
+      |  ^~~~~~
+cstring.h:22:24: warning: operation on ‘foot->link.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+markdown.c:1034:5: note: in expansion of macro ‘EXPAND’
+ 1034 |     EXPAND(foot->link) = 0;
+      |     ^~~~~~
+cstring.h:22:24: warning: operation on ‘foot->title.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+markdown.c:1061:6: note: in expansion of macro ‘EXPAND’
+ 1061 |      EXPAND(foot->title) = T(p->text)[j++];
+      |      ^~~~~~
+cstring.h:22:24: warning: operation on ‘foot->title.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+markdown.c:1067:2: note: in expansion of macro ‘EXPAND’
+ 1067 |  EXPAND(foot->title) = 0;
+      |  ^~~~~~
+markdown.c: In function ‘compile’:
+markdown.c:1267:12: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+ 1267 |  else if ( list_class = islist(ptr, &indent, f->flags, &list_type) ) {
+      |            ^~~~~~~~~~
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o mkdio.o -c mkdio.c
+mkdio.c: In function ‘__mkd_new_Document’:
+mkdio.c:27:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   27 |  if ( ret->ctx = calloc(sizeof(MMIOT), 1) ) {
+      |       ^~~
+In file included from mkdio.c:13:
+mkdio.c: In function ‘__mkd_enqueue’:
+cstring.h:22:24: warning: operation on ‘p->text.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+mkdio.c:60:3: note: in expansion of macro ‘EXPAND’
+   60 |   EXPAND(p->text) = ' ';
+      |   ^~~~~~
+cstring.h:22:24: warning: operation on ‘p->text.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+mkdio.c:66:6: note: in expansion of macro ‘EXPAND’
+   66 |      EXPAND(p->text) = c;
+      |      ^~~~~~
+cstring.h:22:24: warning: operation on ‘p->text.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+mkdio.c:70:5: note: in expansion of macro ‘EXPAND’
+   70 |     EXPAND(p->text) = 0;
+      |     ^~~~~~
+mkdio.c: In function ‘populate’:
+cstring.h:22:24: warning: operation on ‘line.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+mkdio.c:116:6: note: in expansion of macro ‘EXPAND’
+  116 |      EXPAND(line) = c;
+      |      ^~~~~~
+mkdio.c: In function ‘mkd_line’:
+mkdio.c:279:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  279 |     if ( len = S(f.out) ) {
+      |          ^~~
+In file included from mkdio.c:13:
+cstring.h:22:24: warning: operation on ‘f.out.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+mkdio.c:285:2: note: in expansion of macro ‘EXPAND’
+  285 |  EXPAND(f.out) = 0;
+      |  ^~~~~~
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o mktags.o -c mktags.c
+In file included from mktags.c:6:
+mktags.c: In function ‘define_one_tag’:
+cstring.h:22:24: warning: operation on ‘blocktags.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+mktags.c:17:21: note: in expansion of macro ‘EXPAND’
+   17 |     struct kw *p = &EXPAND(blocktags);
+      |                     ^~~~~~
+mktags.c: At top level:
+mktags.c:44:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+   44 | main()
+      | ^~~~
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o pgm_options.o -c pgm_options.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o rdiscount.o -c rdiscount.c
+rdiscount.c: In function ‘rb_rdiscount_to_html’:
+rdiscount.c:50:17: warning: implicit declaration of function ‘rb_rdiscount__get_flags’ [-Wimplicit-function-declaration]
+   50 |     int flags = rb_rdiscount__get_flags(self);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o resource.o -c resource.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o setup.o -c setup.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o tags.o -c tags.c
+In file included from tags.c:4:
+tags.c: In function ‘mkd_define_tag’:
+cstring.h:22:24: warning: operation on ‘extratags.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+tags.c:32:7: note: in expansion of macro ‘EXPAND’
+   32 |  p = &EXPAND(extratags);
+      |       ^~~~~~
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o toc.o -c toc.c
+In file included from toc.c:14:
+toc.c: In function ‘mkd_toc’:
+cstring.h:22:24: warning: operation on ‘res.size’ may be undefined [-Wsequence-point]
+   22 | #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+      |                   ~~~~~^~~
+toc.c:85:2: note: in expansion of macro ‘EXPAND’
+   85 |  EXPAND(res) = 0;
+      |  ^~~~~~
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o version.o -c version.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o xml.o -c xml.c
+xml.c: In function ‘mkd_generatexml’:
+xml.c:49:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   49 |  if ( entity = mkd_xmlchar(c) )
+      |       ^~~~~~
+xml.c: In function ‘mkd_xml’:
+xml.c:72:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   72 |  if ( entity = mkd_xmlchar(c) )
+      |       ^~~~~~
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RANDOM -DHAVE_SRANDOM -DHAVE_RAND -DHAVE_SRAND -DSIZEOF_UNSIGNED_LONG=8 -DSIZEOF_UNSIGNED_INT=4 -DSIZEOF_UNSIGNED_INT=4 -DVERSION=\"2.1.8\"    -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o xmlpage.o -c xmlpage.c
+xmlpage.c: In function ‘mkd_xhtmlpage’:
+xmlpage.c:33:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   33 |  if ( title = mkd_doc_title(p) )
+      |       ^~~~~
+rm -f rdiscount.so
+gcc -shared -o rdiscount.so Csio.o amalloc.o basename.o css.o docheader.o dumptree.o emmatch.o flags.o generate.o github_flavoured.o html5.o markdown.o mkdio.o mktags.o pgm_options.o rdiscount.o resource.o setup.o tags.o toc.o version.o xml.o xmlpage.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld  -m64  -lruby  -lm   -lc
+
+current directory: /home/hannah/Documents/Website/hhollandmoritz.github.io/vendor/build/ruby/2.6.0/gems/rdiscount-2.1.8/ext
+make "DESTDIR=" install
+/usr/bin/mkdir -p . ./.gem.20200220-24943-1gd5bni
+exit > .sitearchdir.time
+/usr/bin/install -c -m 0755 rdiscount.so ./.gem.20200220-24943-1gd5bni

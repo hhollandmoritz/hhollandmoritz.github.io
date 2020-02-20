@@ -1,0 +1,42 @@
+current directory: /home/hannah/Documents/Website/hhollandmoritz.github.io/vendor/build/ruby/2.6.0/gems/posix-spawn-0.3.13/ext
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20200220-24943-6z7wee.rb extconf.rb
+creating Makefile
+
+current directory: /home/hannah/Documents/Website/hhollandmoritz.github.io/vendor/build/ruby/2.6.0/gems/posix-spawn-0.3.13/ext
+make "DESTDIR=" clean
+rm -f 
+rm -f posix_spawn_ext.so  *.o  *.bak mkmf.log .*.time
+
+current directory: /home/hannah/Documents/Website/hhollandmoritz.github.io/vendor/build/ruby/2.6.0/gems/posix-spawn-0.3.13/ext
+make "DESTDIR="
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I.   -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -Wall  -m64 -o posix-spawn.o -c posix-spawn.c
+In file included from /usr/include/string.h:495,
+                 from posix-spawn.c:11:
+In function ‘strncpy’,
+    inlined from ‘each_env_i’ at posix-spawn.c:309:3:
+/usr/include/bits/string_fortified.h:106:10: warning: ‘__builtin_strncpy’ output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+posix-spawn.c: In function ‘each_env_i’:
+posix-spawn.c:277:26: note: length computed here
+  277 |  const size_t name_len = strlen(name);
+      |                          ^~~~~~~~~~~~
+In file included from /usr/include/string.h:495,
+                 from posix-spawn.c:11:
+In function ‘strncpy’,
+    inlined from ‘each_env_i’ at posix-spawn.c:311:3:
+/usr/include/bits/string_fortified.h:106:10: warning: ‘__builtin_strncpy’ output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+posix-spawn.c: In function ‘each_env_i’:
+posix-spawn.c:302:21: note: length computed here
+  302 |   size_t cval_len = strlen(cval);
+      |                     ^~~~~~~~~~~~
+rm -f posix_spawn_ext.so
+gcc -shared -o posix_spawn_ext.so posix-spawn.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld  -m64  -lruby  -lm   -lc
+
+current directory: /home/hannah/Documents/Website/hhollandmoritz.github.io/vendor/build/ruby/2.6.0/gems/posix-spawn-0.3.13/ext
+make "DESTDIR=" install
+/usr/bin/mkdir -p . ./.gem.20200220-24943-gkma6v
+exit > .sitearchdir.time
+/usr/bin/install -c -m 0755 posix_spawn_ext.so ./.gem.20200220-24943-gkma6v

@@ -1,0 +1,67 @@
+current directory: /home/hannah/Documents/Website/hhollandmoritz.github.io/vendor/build/ruby/2.6.0/gems/fast-stemmer-1.0.2/ext
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20200220-24943-lh3dij.rb extconf.rb
+creating Makefile
+
+current directory: /home/hannah/Documents/Website/hhollandmoritz.github.io/vendor/build/ruby/2.6.0/gems/fast-stemmer-1.0.2/ext
+make "DESTDIR=" clean
+rm -f 
+rm -f stemmer.so  *.o  *.bak mkmf.log .*.time
+
+current directory: /home/hannah/Documents/Website/hhollandmoritz.github.io/vendor/build/ruby/2.6.0/gems/fast-stemmer-1.0.2/ext
+make "DESTDIR="
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I.   -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o porter.o -c porter.c
+porter.c: In function ‘m’:
+porter.c:124:7: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  124 |       if (! cons(z, i)) break; i++;
+      |       ^~
+porter.c:124:32: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  124 |       if (! cons(z, i)) break; i++;
+      |                                ^
+porter.c: In function ‘step4’:
+porter.c:327:17: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  327 |                 if (ends(z, "\04" "ence")) break; return;
+      |                 ^~
+porter.c:327:51: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  327 |                 if (ends(z, "\04" "ence")) break; return;
+      |                                                   ^~~~~~
+porter.c:331:17: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  331 |                 if (ends(z, "\04" "ible")) break; return;
+      |                 ^~
+porter.c:331:51: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  331 |                 if (ends(z, "\04" "ible")) break; return;
+      |                                                   ^~~~~~
+porter.c:335:17: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  335 |                 if (ends(z, "\03" "ent")) break; return;
+      |                 ^~
+porter.c:335:50: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  335 |                 if (ends(z, "\03" "ent")) break; return;
+      |                                                  ^~~~~~
+porter.c:337:17: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  337 |                 if (ends(z, "\02" "ou")) break; return;
+      |                 ^~
+porter.c:337:49: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  337 |                 if (ends(z, "\02" "ou")) break; return;
+      |                                                 ^~~~~~
+porter.c:341:17: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  341 |                 if (ends(z, "\03" "iti")) break; return;
+      |                 ^~
+porter.c:341:50: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  341 |                 if (ends(z, "\03" "iti")) break; return;
+      |                                                  ^~~~~~
+porter.c: In function ‘step5’:
+porter.c:359:27: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+  359 |       if (a > 1 || a == 1 && !cvc(z, z->k - 1)) z->k--;
+      |                    ~~~~~~~^~~~~~~~~~~~~~~~~~~~
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I.   -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o porter_wrap.o -c porter_wrap.c
+porter_wrap.c: In function ‘stem_word’:
+porter_wrap.c:20:17: warning: unused variable ‘i’ [-Wunused-variable]
+   20 |  size_t length, i;
+      |                 ^
+rm -f stemmer.so
+gcc -shared -o stemmer.so porter.o porter_wrap.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld  -m64  -lruby  -lm   -lc
+
+current directory: /home/hannah/Documents/Website/hhollandmoritz.github.io/vendor/build/ruby/2.6.0/gems/fast-stemmer-1.0.2/ext
+make "DESTDIR=" install
+/usr/bin/mkdir -p . ./.gem.20200220-24943-1cqdo9c
+exit > .sitearchdir.time
+/usr/bin/install -c -m 0755 stemmer.so ./.gem.20200220-24943-1cqdo9c
