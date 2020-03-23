@@ -28,6 +28,15 @@ $ git push
 
 ## Workflow for updating website on github:
 
+**NOTE:** Currently jekyll-scholar depends on a version of bibtex-ruby that has a security flaw. The newer version of jekyll-scholar does not have this flaw, however this version of jekyll-scholar depends on jekyll 4. While github-pages depends on jekyll 3.5.8. It seems like the upgrade for github pages will not come soon. Therefore, until that fix before launching the website you need to manually change the bibtex-ruby requirment in Gemfile.lock like this:
+
+```bash
+gem "bibtex-ruby", ">= 5.1.0"
+```
+More information can be found here:
+ * [https://github.com/jupyter/jupyter-book/issues/477](https://github.com/jupyter/jupyter-book/issues/477)  
+ * https://github.com/github/pages-gem/issues/651 
+
 1) Deploy the site from the development branch to the gh-pages branch
 
 ```bash
