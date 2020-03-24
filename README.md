@@ -66,7 +66,7 @@ $ git merge gh-pages
 $ git push
 ```
 ## Other Editing Notes
-* To edit the CV page, open ```_includes/header.html``` in a textfile and edit the link under the "CV link" section.
+* To edit the CV page, add the new CV to the "/assets/pdf/" directory and specify it's path in the `CV_file` option in the `_config.yml` file.
 
 * If you are receiving dependency notifications on Github about site security, you can update the dependencies in jekyll this way:
 
