@@ -104,7 +104,7 @@ scholar:
   order: ascending
 
   source: /_bibliography/
-  bibliography: papers.bib
+  bibliography: pr_papers.bib
   bibliography_template: bib
 
   replace_strings: true
