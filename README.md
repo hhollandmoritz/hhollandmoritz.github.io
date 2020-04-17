@@ -31,7 +31,8 @@ $ git push
 **NOTE:** Currently jekyll-scholar depends on a version of bibtex-ruby that has a security flaw. The newer version of jekyll-scholar does not have this flaw, however this version of jekyll-scholar depends on jekyll 4. While github-pages depends on jekyll 3.5.8. It seems like the upgrade for github pages will not come soon. Therefore, until that fix before launching the website you need to manually change the bibtex-ruby requirment in Gemfile.lock like this:
 
 1) Remove the versions from each of the bibtex-ruby lines in the Gemfile.Lock
-2) Run `bundle update bibtex-ruby`
+2) Run `bundle update bibtex-ruby` 
+   - note this resulted in an error `could not find gem "bibtex-ruby" Did you mean bibtex-ruby?`, but it still managed to update properly. 
 3) Use `bundle exec jekyll serve` to check that the update didn't screw up the publications section.
 4) Proceed with the deployment.
 
