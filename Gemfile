@@ -14,6 +14,8 @@ group :jekyll_plugins do
     gem 'unicode_utils'
     gem 'jekyll-twitter-plugin'
 #    gem "bibtex-ruby", ">= 5.1.0"
+    # allows an automatic modification date
+    gem 'jekyll-last-modified-at'
 
 
 end
