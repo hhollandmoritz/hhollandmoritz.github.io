@@ -8,7 +8,7 @@ description: To see the most current list of publications, check out my <a href=
 pryears: [2020, 2019, 2018, 2014]
 npryears: [2014, 2013]
 ---
-<h3  class="pubyear">In the Pipeline</h3>
+<h3  class="pubyear">In the pipeline</h3>
 {% bibliography -f prpr %}
 
 <h3  class="pubyear">Publications</h3>
