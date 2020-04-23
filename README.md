@@ -69,8 +69,10 @@ $ git merge gh-pages
 $ git push
 ```
 ## Other Editing Notes
+### CV file ###
 * To edit the CV page, add the new CV to the "/assets/pdf/" directory and specify it's path in the `CV_file` option in the `_config.yml` file.
 
+### Update headaches ###
 * If you are receiving dependency notifications on Github about site security, you can update the dependencies in jekyll this way:
 
 ```bash
@@ -84,6 +86,7 @@ bundle update
 bundle install
 ```
 
+### Drafts ###
 * To create a blog post, you can design it in the ```_drafts``` folder first. Then when it is ready for real time, move it to the ```_posts``` folder and rename it the publication date first. Then the draft will be published.
 
 To preview a draft post use this command:
@@ -92,6 +95,7 @@ To preview a draft post use this command:
 bundle exec jekyll serve --drafts
 ```
 
+* I have also created a new folder called `under_construction` inside the `_drafts` folder. Inside this folder are pages that I'm still working on that are not yet ready for publication in the Teaching and Projects pages. Unfortunately, at this point I haven't been able to figure out how to stop their contents from being displayed in `bundle exec jekyll serve --drafts`. C'est la vie....
 
 ## Find more information about this theme and the readme here:
 [https://github.com/alshedivat/al-folio](https://github.com/alshedivat/al-folio)
