@@ -14,6 +14,8 @@ Over the years, I have created a number of pipelines, tools, and resources for b
 ### General Resources
 * Quick 'N Dirty guide to Git: [link](https://github.com/hhollandmoritz/git_guide)
 
+* Automating Workflows with Make (emphsis on R-based workflows): [link](https://github.com/hhollandmoritz/AutomatingWorkflowsWithMake)
+
 * Templates for Common R Analyses: [link](https://github.com/hhollandmoritz/CommonRCode)
 
 * Knitting and spinning R projects: [link](https://github.com/hhollandmoritz/Useful_templates)
