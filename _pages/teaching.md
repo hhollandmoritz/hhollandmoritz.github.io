@@ -6,8 +6,6 @@ link_name: teaching
 description: Educational materials and resources from various projects.
 ---
 
-Below are some of my educational resources and courses. 
-
 {% for project in site.teaching %}
 
 {% if project.redirect %}
