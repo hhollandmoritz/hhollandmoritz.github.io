@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Microbes: Did You Know? - Antibiotics and soil"
+date: 2020-04-28 21:01:00
+description: Many antibiotics come from the soil. Why it that?
+---
+
+#### What do antibiotics have to do with soil?
+
+It may seem surprising but many of our antibiotics come from soil. Soil is teaming with microbes all competing for space and food. Over millions of years some microbes have learned to wage war against their fellow microbes. One way they do this is through producing antibiotics. 
