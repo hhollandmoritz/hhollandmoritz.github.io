@@ -17,6 +17,17 @@ article a, .news a {
     }
 }
 
+a.tag {
+    color: $text-color;
+    font-weight: 100;
+    background-color: $lighter-gray;
+
+    &:hover {
+        color: $theme-color;
+        text-decoration: underline;
+    }
+}
+
 .social a {
     color: $text-color;
 
