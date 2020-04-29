@@ -1,9 +1,12 @@
 ---
 layout: post
-title: "Microbes: Did You Know? - Antibiotics and soil"
+title: "MicroFacts - Antibiotics and soil"
 date: 2020-04-28 21:01:00
-description: Many antibiotics come from the soil. Why it that?
+tags: microfacts for-everyone
+description: We normally think of soil as "dirty" but some of our most potent bacteria-killing compounds come from the soil
 ---
+
+
 
 #### What do antibiotics have to do with soil?
 
