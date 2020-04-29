@@ -26,4 +26,6 @@ social: true
 
 I am a graduate student at University of Colorado, Boulder studying Ecology and Evolutionary Biology, with a speciality in microbial ecology. I use molecular and computational tools to study microbial communities. My research focuses on the environmental conditions which influence community assembly and the molecular mechanisms that underpin community functional traits. 
 
+I'm passionate about science communication, diversity and inclusion in STEM, and teaching computational skills. 
+
 Check out my [Twitter](https://twitter.com/hhollandmoritz?lang=en) account. 
