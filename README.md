@@ -34,8 +34,20 @@ git checkout development
 
 ## Workflow for updating website on github:
 
-1) update the the tags with the tag_generator.py
+1) **If writing a Rmarkdown post, run the `R2Jekyll.R` script** to convert the draft post to a jekyll-friendly version.
 
+```bash
+cd _drafts
+./R2Jekyll.R mypost.Rmd
+```
+
+2) **Update the the tags with the `tag_generator.py`**
+ Create a tag page for any tags that you have never used before and then run the tag genrator as below:
+
+```bash
+./tag_generator.py
+```
+3) **Fix the security flaws**
 **NOTE:** Currently jekyll-scholar depends on a version of bibtex-ruby that has a security flaw. The newer version of jekyll-scholar does not have this flaw, however this version of jekyll-scholar depends on jekyll 4. While github-pages depends on jekyll 3.5.8. It seems like the upgrade for github pages will not come soon. Therefore, until that fix before launching the website you need to manually change the bibtex-ruby requirment in Gemfile.lock like this:
 
 1) Remove the versions from each of the bibtex-ruby lines in the Gemfile.Lock
