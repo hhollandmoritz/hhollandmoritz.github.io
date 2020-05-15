@@ -1,17 +1,18 @@
+
 pre,
 pre code {
   background-color: transparent;
   border-radius: $pre-border-radius;
 }
-
+/*
 pre,
 code {
   font-family: $monospace-font-family;
-  font-size: 12;
+  font-size: 1.125rem;
 }
 
 code {
-  color: $code-color;
+  //color: $code-color; //inherit;// ;
   font-size: 100%;
   padding-bottom: 0.1em;
   padding-left: 0.2em;
@@ -44,10 +45,11 @@ pre a {
     background-image: none;
 }
 
+
 pre a::before {
   content: counter(line-numbering);
   counter-increment: line-numbering;
-  padding-right: 1em; /* space after numbers */
+  padding-right: 1em; // space after numbers
   width: 25px;
   text-align: right;
   opacity: 0.7;
@@ -74,4 +76,108 @@ pre a:last-of-type::before {
 pre a:only-of-type::before {
   padding: 10px;
 }
+*/
+/* New code */
 
+figure.highlight,
+pre.highlight {
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    overflow: hidden;
+    line-height: 1.4rem;
+    position: relative;
+    
+    //opacity: 0.5;
+}
+
+.highlighter-rouge {
+    font-weight: 300;
+    position: relative;
+}
+
+p code.highlighter-rouge,
+p kbd {
+    color: #cc6666;
+    font-size: 0.8rem;
+    background-color: $code-inline-bg;
+    padding: 2px 4px;
+    border-radius: 4px;
+    word-break: break-word;
+}
+
+kbd {
+    border: 1px solid $gray-800;
+    border-radius: 4px;
+}
+
+figure.highlight::before,
+div.highlighter-rouge::before {
+    font-family: $monospace-font-family;
+    content: attr(data-lang);
+    font-size: .9rem;
+    color: $gray-200;
+    position: absolute;
+    display: block;
+    height: 1rem;
+    right: .5rem;
+    z-index: 5;
+}
+
+figure.highlight::before {
+    margin-top: -1rem;
+
+}
+
+.rouge-table .code pre {
+    overflow: hidden;
+}
+
+.rouge-table .code pre {
+    overflow: hidden;
+}
+
+table.rouge-table,
+table.rouge-table tr,
+table.rouge-table td,
+table.rouge-table pre {
+    border: 0;
+    padding: 0;
+    margin: 0;
+
+}
+
+table.rouge-table td.gutter {
+    padding-right: .5rem;
+    border-right: 1px solid;
+    background: $code-bg;
+    border-collapse: collapse;
+    grid-column-gap: 0px;
+    width: 0.5rem;
+    opacity: 0.5;
+}
+
+table.rouge-table td.code {
+    padding-left: 0.5rem;
+}
+
+figure pre {
+    margin-bottom: 0;
+}
+
+.lineno {
+    text-align: right;
+    padding: 0;
+}
+/*
+*/
+/* Base16 Tomorrow Dark by Chris Kempson; https://github.com/idleberg */
+
+.highlight,
+.highlight pre,
+.highlight table {
+    background: $code-bg;
+    color: $gray-200;
+    border-radius: 4px;
+    font-size: 1rem;
+    overflow: auto;
+}

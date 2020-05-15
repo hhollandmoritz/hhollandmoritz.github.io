@@ -73,7 +73,7 @@ $darken-3:          rgba(#000,.25) !default;
 $darken-4:          rgba(#000,.5) !default;
 
 $theme-color:       $powder-green;
-$code-color:        $dark-gray;
+$code-color:        #e9ecef; //$dark-gray;
 $text-color:        $mid-gray;
 $background-color:  white;
 
@@ -122,7 +122,7 @@ $form-field-padding-x: .5rem;
 
 // Code
 $pre-border-radius: 0;
-$pre-background-color: #fafafa;
+$pre-background-color: #2e3e4e;// #fafafa;
 $hljs-comment: $mid-gray;
 $hljs-keyword: $dark-blue;
 $hljs-name: $dark-gray;
@@ -140,6 +140,10 @@ $hljs-deletion: $light-pink;
 $hljs-addition: $light-green;
 $hljs-change: $dark-blue;
 $hljs-chunk: $light-gray;
+$gray-200: #e9ecef;
+$code-bg: #2e3e4e; 
+$code-inline-bg: auto; //#2e3e4e;
+$gray-800: $dark-gray;
 
 // Header
 $nav-height: 56px;
