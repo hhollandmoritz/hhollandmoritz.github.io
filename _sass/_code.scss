@@ -4,7 +4,49 @@ pre code {
   background-color: transparent;
   border-radius: $pre-border-radius;
 }
-/*
+/* this adds some padding between the scrollbar and the end of the code */
+code[class*="language-"]::after {
+    content: "";
+    padding: 0rem;
+    display: block;
+    font-size: 0.0rem;
+    line-height: 0.5rem;
+}
+
+code[class*="language-"]::before {
+    font-family: $monospace-font-family;
+    content: attr(data-lang);
+    font-size: .9rem;
+    color: $gray-200;
+    position: absolute;
+    display: block;
+    height: 1rem;
+    right: .5rem;
+    z-index: 5;
+    margin-top: -1rem;
+}
+
+/* Don't label language for "text" */
+code[class="language-text"]::before {
+    font-family: $monospace-font-family;
+    content: none;
+    font-size: .9rem;
+    color: $gray-200;
+    position: absolute;
+    display: block;
+    height: 1rem;
+    right: .5rem;
+    z-index: 5;
+}
+
+/* Original code handling
+
+pre,
+pre code {
+  background-color: transparent;
+  border-radius: $pre-border-radius;
+}
+
 pre,
 code {
   font-family: $monospace-font-family;
@@ -81,7 +123,7 @@ pre a:only-of-type::before {
 
 figure.highlight,
 pre.highlight {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1rem;
     margin: 1.5rem 0;
     overflow: hidden;
     line-height: 1.4rem;
@@ -113,7 +155,7 @@ kbd {
 figure.highlight::before,
 div.highlighter-rouge::before {
     font-family: $monospace-font-family;
-    content: attr(data-lang);
+    content: none;
     font-size: .9rem;
     color: $gray-200;
     position: absolute;
