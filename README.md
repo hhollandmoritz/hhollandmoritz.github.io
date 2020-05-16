@@ -45,7 +45,7 @@ cd _drafts
  Create a tag page for any tags that you have never used before and then run the tag genrator as below:
 
 ```bash
-./tag_generator.py
+python3 tag_generator.py
 ```
 3) **Fix the security flaws**
 **NOTE:** Currently jekyll-scholar depends on a version of bibtex-ruby that has a security flaw. The newer version of jekyll-scholar does not have this flaw, however this version of jekyll-scholar depends on jekyll 4. While github-pages depends on jekyll 3.5.8. It seems like the upgrade for github pages will not come soon. Therefore, until that fix before launching the website you need to manually change the bibtex-ruby requirment in Gemfile.lock like this:
