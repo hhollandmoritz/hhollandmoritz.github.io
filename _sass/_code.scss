@@ -5,7 +5,7 @@ pre code {
   border-radius: $pre-border-radius;
 }
 /* this adds some padding between the scrollbar and the end of the code */
-code[class*="language-"]::after {
+.rouge-table::after {
     content: "";
     padding: 0rem;
     display: block;
