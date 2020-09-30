@@ -29,6 +29,8 @@
 @import 'links';
 @import 'measure';
 
+//@import 'bootstrap'; /* bootstrap css styling - doesn't work yet: more info: http://veithen.io/2015/03/26/jekyll-bootstrap.html*/
+@import 'tables_kable';
 @import 'social-icons';
 @import 'tables';
 @import 'typography';
