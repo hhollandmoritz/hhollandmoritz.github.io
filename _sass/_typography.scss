@@ -4,7 +4,7 @@ html {
 
 body {
     color: $text-color;
-    font-weight: 100;
+    //font-weight: 100;
 }
 
 abbr {
@@ -13,7 +13,7 @@ abbr {
 }
 
 p {
-    color: #333;
+    //color: #333; //removed b/c it messes up font color in blog
     line-height: 1.5;
 }
 
