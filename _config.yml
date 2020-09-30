@@ -82,9 +82,10 @@ news_limit: 5
 markdown: kramdown
 highlighter: rouge
 
+
 # Includes & excludes
 include: ['_pages']
-exclude: [vendor]
+exclude: [vendor, 'assets/css/bootstrap-sass-3.2.0-4']
 
 # Plug-ins
 plugins:
