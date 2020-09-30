@@ -1,0 +1,252 @@
+---
+title: "Building a heatmap with multiple taxonomic levels in R"
+author: "Hannah Holland-Moritz, et al."
+date: 2020-09-28 15:30
+description: Making advanced heatmaps
+layout: post
+tags: R tutorials
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = ".", output_format = jekyll_document()) })
+---
+
+```{r setup, include=FALSE}
+base_dir <- "~/Documents/Website/hhollandmoritz.github.io" # i.e. where the jekyll blog is on the hard drive.
+base_url <- "/" # keep as is
+fig_path <- "{{ site.url }}/images/rmarkdown-to-jekyll-example-" # customize to heart's content, I 'spose.
+
+knitr::opts_chunk$set(echo = TRUE,
+                      base.dir = base_dir, base.url = base_url,
+                      fig.path = fig_path,
+                      cache.path = "cache/",
+                      collapse =  TRUE,
+                      message = FALSE, 
+                      warning = FALSE,
+                      dpi = 400,
+                      fig.dim = c(11,8.5),
+                      out.width = '100%',
+                      out.height = '100%')
+```
+
+
+I often want to categorize my heatmaps by multiple taxonomic groups in R. After much head-bashing, I've come to this solution. 
+
+
+```{r}
+# Libraries
+library(plyr)
+library(tidyverse)
+library(ggplot2)
+
+library(viridis) # optional for pretty viridis coloring
+```
+
+```{r, eval = TRUE, echo = FALSE}
+library(mctoolsr)
+library(kableExtra)
+```
+
+```{r}
+input_rar_filt_reps <- readRDS("~/Documents/Fierer_lab/SandboxExperiment/16S_Analysis/01_cleaned_data/outputs/input_rar_filt_reps.RDS")
+
+tax_sum_fam <- summarize_taxonomy(input_rar_filt_reps, level = 5, report_higher_tax = TRUE)
+
+tax_sum_fam_site <- taxa_summary_by_sample_type(taxa_smry_df = tax_sum_fam, 
+                            metadata_map = input_rar_filt_reps$map_loaded, 
+                            type_header = "SiteName",
+                            filter_level = 0.02, 
+                            test_type = "KW")
+
+tax_sum_fam_small <- tax_sum_fam_site %>%
+        rownames_to_column(var = "Taxonomy") %>%
+        select(-pvals, -pvalsBon, -pvalsFDR) %>%
+        mutate_if(is.numeric, ~round(., digits = 3)) %>%
+        select(Taxonomy:MA)
+
+```
+
+### Step 1: Prepare data for plotting
+
+First you'll want to set up your data frame for plotting. The data frame should a column of taxonomy strings and the rest of the columns should be a sample or whatever unit you want to be on your y-axis eventually.
+
+
+For example, the table below. I have taxonomy strings that go down to family level and every column after the taxonomy column is a sample. 
+
+```{r, eval=TRUE, echo=FALSE, results="asis", cache=FALSE}
+options(knitr.kable.NA = '-')
+kable(tax_sum_fam_small %>%
+        slice(1:5),
+      align = "c", format = "html", table.attr = "class=\'kabletable\'") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = F) #%>%
+  #scroll_box(width = "100%", height = "200px")
+```
+
+#### Change the data to long format
+
+The data is currently in wide-format and to plot in ggplot it needs to be in long format. So we will change our data frame into long format. 
+
+```{r, eval=TRUE}
+### Get data ready for plotting
+tax_sum_fam_small_melt <- tax_sum_fam_small %>%
+  pivot_longer(cols = !matches("Taxonomy"), names_to = "SiteName", 
+               values_to = "Relative Abundance") 
+```
+
+The table is now in long format:
+
+```{r, echo = FALSE, eval = TRUE}
+slice(tax_sum_fam_small_melt, 1:5)
+```
+
+Because I want to use taxonomic levels separately, I will add another line to the code to separate the taxonomy column into multiple columns corresponding to each taxonomic level.
+
+```{r, eval=TRUE}
+### Get data ready for plotting
+tax_sum_fam_small_melt <- tax_sum_fam_small %>%
+  pivot_longer(cols = !matches("Taxonomy"), names_to = "SiteName", 
+               values_to = "Relative Abundance") %>%
+  separate(Taxonomy, into = c("Kingdom", "Phylum", "Class", "Order", "Family"), 
+           sep = "; ")
+  
+```
+
+```{r, echo = FALSE, eval = TRUE}
+slice(tax_sum_fam_small_melt, 1:5)
+```
+
+### Step 2: Plot a traditional heatmap
+Building from simple to more complex we will first make a traditional heatmap with the relative abundance text in each tile. I have also added in some styling in the theme section so that the annoying gray ggplot default background goes away and so that the family names are legible. Finally, I have removed the legend since our the numbers in each box make it redundant.
+
+```{r, eval = TRUE, cache=FALSE}
+# Traditional heatmap
+uglyheatmap <- ggplot(data = tax_sum_fam_small_melt,
+                  aes(x = Family, y = `SiteName`, fill = `Relative Abundance`)) + 
+  geom_tile(height = 1) +
+  scale_x_discrete(expand = c(0,0)) +
+  geom_text(aes(label = `Relative Abundance`), color = "white", size = rel(2.5))
+uglyheatmap
+
+# Traditional heatmap with some styling
+heatmap <- ggplot(data = tax_sum_fam_small_melt,
+                  aes(x = Family, y = `SiteName`, fill = `Relative Abundance`)) + 
+  geom_tile(height = 1) +
+  scale_x_discrete(expand = c(0,0)) +
+  geom_text(aes(label = `Relative Abundance`), color = "white", size = rel(2.5)) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = rel(1.5)),
+        axis.text.y = element_text(angle = 0, hjust = 1, size = rel(1.5)),
+        legend.position = "none",
+        panel.grid = element_blank(),
+        panel.background = element_blank(),
+        panel.border = element_blank())
+heatmap
+```
+
+### Step 3: Add phylum names as ggplot facets
+
+Next, we want to add in our phylum names. At the moment, Family is on the x-axis. It would be really nice if we could have some indication of the phylum that each family belonged to. To do this, we will add faceting.
+
+The code is below: `scales` and `space` are set to "free" and `drop = TRUE` this allows the facet size to vary freely (keep it's tile proportions rather than warping them based on the number of families) and prevents families within a particular phlyum that don't have any data from being plotted and filling our graph with whitespace. 
+
+The faceted graph is still not ideal since the phyla panels are separated by whitespace, but we're on our way. 
+
+```{r, eval = TRUE, cache=FALSE}
+### Plot heatmap
+heatmap <- ggplot(data = tax_sum_fam_small_melt,
+                  aes(x = Family, y = `SiteName`, fill = `Relative Abundance`)) + 
+  geom_tile(height = 1) +
+  scale_x_discrete(expand = c(0,0)) +
+  # We add a faceting line
+  facet_grid(~ Phylum, 
+             scales = "free", 
+             space = "free", 
+             drop = TRUE) +
+  geom_text(aes(label = `Relative Abundance`), color = "white", size = rel(2.5)) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = rel(1.5)),
+        axis.text.y = element_text(angle = 0, hjust = 1, size = rel(1.5)),
+        legend.position = "none",
+        panel.grid = element_blank(),
+        panel.background = element_blank(),
+        panel.border = element_blank(),
+        plot.margin = unit(0.8, "npc"))
+heatmap
+```
+
+### Step 4: Remove space between panels and miscellaneous tidying
+Now we will tidy it up a little bit: 
+
+The `strip.text.x` centers the phylum names and adjusts the size, the `panel.spacing` removes the space between phylum panels so that the heatmap is contiguous. 
+
+```{r, eval = TRUE, cache=FALSE}
+### Plot heatmap
+heatmap <- ggplot(data = tax_sum_fam_small_melt,
+                  aes(x = Family, y = `SiteName`, fill = `Relative Abundance`)) + 
+  geom_tile(height = 1) +
+  scale_x_discrete(expand = c(0,0)) +
+  # We add a faceting line
+  facet_grid(~ Phylum, scales = "free", space = "free", drop = TRUE) +
+  geom_text(aes(label = `Relative Abundance`), color = "white", size = rel(2.5)) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = rel(1.5)),
+        axis.text.y = element_text(angle = 0, hjust = 1, size = rel(1.5)),
+        legend.position = "none",
+        panel.grid = element_blank(),
+        panel.background = element_blank(),
+        panel.border = element_blank(),
+        strip.text.x = element_text(hjust = 0.5, 
+                                    size = rel(0.8), 
+                                    margin = margin(c(18,0,18,0))),
+        panel.spacing = unit(0, "mm"))
+heatmap
+```
+
+Nearly perfect, but what about the phylum labels?? They're still wonky sizes and some don't fit in their panels. 
+
+Unfortunately, it is very difficult to get the strip text size correct in R in this situation. I usually, save the image as a pdf and then use [Inkscape](https://inkscape.org/) (a free version of Adobe Illustrator) to adjust the label size.
+
+### Other things you can do:
+1) Sorting by abundances
+
+
+```{r, eval=FALSE}
+### Get data ready for plotting
+tax_sum_fam_small_melt <- tax_sum_fam_small %>%
+  pivot_longer(cols = !matches("Taxonomy"), names_to = "SiteName", 
+               values_to = "Relative Abundance") 
+  separate(taxonomy, into = c("Kingdom", "Phylum", "Class", "Order", "Family"), 
+           sep = "; ") %>%
+  group_by(Phylum, Family) %>%
+  mutate(FamilyRA = mean(`Relative Abundance`)) %>%
+  ungroup() %>%
+  group_by(Phylum) %>%
+  mutate(PhylumRA = mean(`Relative Abundance`)) %>%
+  ungroup() %>%
+  mutate(Phylum = fct_reorder(Phylum, desc(PhylumRA)),
+         Family = fct_reorder(Family, desc(FamilyRA))) #%>%
+  #mutate(`GatherVariable` = factor(`GatherVariable`, levels = rev(col.order)))
+  
+```
+
+
+```{r, eval = FALSE}
+# ### Plot heatmap
+# 
+heatmap <- ggplot(data = tax_sum_fam_species_ord_melt,
+                         aes(x = Family , y = `GatherVariable`, 
+                         fill = `Relative Abundance`)) + 
+  geom_tile(height = 1) + 
+  geom_text(aes(label = `Relative Abundance`), 
+  		    color = "white", size = rel(4.5)) +
+  facet_grid(~ Phylum, scales = "free", space = "free", drop = TRUE) +
+  scale_x_discrete(expand = c(0,0)) +
+  scale_y_discrete(expand = c(0,0), drop = TRUE) +
+  theme(strip.placement = "outside",
+        strip.background = element_rect(size = 0.5, color = "white"),
+        panel.border = element_blank(),
+        panel.spacing = unit(0, "snpc"),
+        axis.text.x = element_text(angle = 45, 
+        hjust = 1, size = rel(1.5)),
+        axis.text.y = element_text(angle = 0, hjust = 0, face = "italic", size = rel(1.5)),
+        strip.text.x = element_text(hjust = 0.5, size = rel(0.8), margin = margin(c(18,0,18,0))),
+        axis.title = element_blank(),
+        legend.position = "none") +
+  scale_fill_viridis(na.value = "white") + # optional viridis colors
+  ggtitle("Taxonomy Heatmap by GatherVariable")
+```

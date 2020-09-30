@@ -26,6 +26,6 @@ fromdir = "{{ site.url }}/images"
 todir = "../images"
 pics = list.files(fromdir, ".png")
 pics = sapply(pics, function(x) paste(fromdir, x, sep="/"))
-file.copy(pics, todir)
+file.copy(pics, todir, overwrite = TRUE)
 # remove the unsightly {{site.url}} directory
 unlink("{{ site.url }}", recursive=T)

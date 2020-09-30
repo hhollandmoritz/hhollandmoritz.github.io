@@ -1,13 +1,16 @@
 ---
 layout: post
 title: "Quick Code: Advanced Heatmaps with ggplot"
-date: 2020-04-28 21:13:00
+date: 2020-05-04
 tags: quick-code R
 description: 
 ---
-I often want to categorize my heatmaps by multiple taxonomic groups. After much head-bashing, I've come to this solution. 
+I often want to categorize my heatmaps by multiple taxonomic groups in R. After much head-bashing, I've come to this solution. 
 
-{% highlight R %}
+First you'll want to set up your data frame for plotting. The dataframe should have row names that correspond to taxonomy strings and each column should be a sample or average over a group of samples. 
+
+
+```R
 
 # Libraries
 library(plyr)
@@ -40,5 +43,5 @@ heatmap <- ggplot(data = tax_sum_fam_species_ord_melt,
         legend.position = "none") +
   scale_fill_viridis(na.value = "white") + # optional viridis colors
   ggtitle("Taxonomy Heatmap by GatherVariable")
+```
 
-{% endhighlight %}
