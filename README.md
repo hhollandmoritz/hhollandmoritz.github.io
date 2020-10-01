@@ -60,6 +60,12 @@ More information can be found here:
  * [https://github.com/jupyter/jupyter-book/issues/477](https://github.com/jupyter/jupyter-book/issues/477) 
  * https://github.com/github/pages-gem/issues/651 
 
+If all else fails, you can rename Gemfile.lock temporarily and rebuild it using the following code:
+```
+bundle install
+
+```
+
 1) Deploy the site from the development branch to the gh-pages branch
 
 ```bash
