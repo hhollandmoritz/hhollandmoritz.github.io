@@ -1,0 +1,29 @@
+I"©<p>Over the years, I have created a number of pipelines, tools, and resources for bioinformatics and computation analyses. Often I begin by creating theses tools for myself and end up sharing them with people. The following is a (non-comprehensive) list of links to some of these resources.</p>
+
+<h3 id="microbial-ecology-resources">Microbial Ecology Resources</h3>
+<ul>
+  <li>
+    <p>A dada2 pipeline for the amplicon analyses in Fierer Lab: <a href="https://github.com/fiererlab/dada2_fiererlab">link</a></p>
+  </li>
+  <li>
+    <p>COMING SOON: Metagenomics Pipeline</p>
+  </li>
+</ul>
+
+<h3 id="general-resources">General Resources</h3>
+<ul>
+  <li>
+    <p>Quick â€˜N Dirty guide to Git: <a href="https://github.com/hhollandmoritz/git_guide">link</a></p>
+  </li>
+  <li>
+    <p>Automating Workflows with Make (emphsis on R-based workflows): <a href="https://github.com/hhollandmoritz/AutomatingWorkflowsWithMake">link</a></p>
+  </li>
+  <li>
+    <p>Templates for Common R Analyses: <a href="https://github.com/hhollandmoritz/CommonRCode">link</a></p>
+  </li>
+  <li>
+    <p>Knitting and spinning R projects: <a href="https://github.com/hhollandmoritz/Useful_templates">link</a></p>
+  </li>
+</ul>
+
+:ET
