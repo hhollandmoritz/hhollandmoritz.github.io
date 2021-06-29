@@ -6,6 +6,7 @@ _site
 #Gemfile.lock
 vendor/
 .bundle/
+.jekyll-cache/
 
 hhollandmoritz.github.io.Rproj
 .Rproj.user
