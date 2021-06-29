@@ -3,7 +3,9 @@ _site
 .jekyll-metadata
 .DS_store
 .ruby-version
-Gemfile.lock
+#Gemfile.lock
+vendor/
+.bundle/
 
 hhollandmoritz.github.io.Rproj
 .Rproj.user
