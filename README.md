@@ -9,6 +9,13 @@
 $ git checkout development
 ```
 
+The first time you make changes during a session, you'll also want to run:
+
+```bash
+$ bundle install
+```
+to make sure all the ruby gems are installed and up to date.
+
 2) Then make any changes to your files.
 
 __Optional__ 
