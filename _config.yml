@@ -94,6 +94,7 @@ plugins:
     - jekyll/scholar
     - jemoji
     - jekyll-last-modified-at
+    - jekyll-pdf-embed
 
 # Jekyll-Scholar
 scholar:

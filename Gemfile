@@ -16,6 +16,8 @@ group :jekyll_plugins do
     gem "bibtex-ruby", ">= 4.0.0"
     # allows an automatic modification date
     gem 'jekyll-last-modified-at'
+    # allows pdf embedding
+    gem 'jekyll-pdf-embed'
 
 
 end

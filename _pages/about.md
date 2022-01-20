@@ -23,7 +23,7 @@ social: true
 
 ---
 
-I am a post-doctoral researcher at the University of New Hampshire. I use molecular and computational tools to study microbial communities. My research focuses on the environmental conditions which influence community assembly and the molecular mechanisms that underpin community functional traits and how to translate those traits into deterministic models. 
+I am a post-doctoral researcher at the University of New Hampshire. I use molecular and computational tools to study microbial communities. My research focuses on the environmental conditions which influence community assembly and the molecular mechanisms that underpin community functional traits and how to translate those traits into predictive models. 
 
 I'm passionate about science communication, diversity and inclusion in STEM, and teaching computational skills. 
 
