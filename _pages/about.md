@@ -6,7 +6,7 @@ description:
         Post-doctoral researcher, <a href="https://mypages.unh.edu/jernakovich">Ernakovich Lab</a> <br/>
         University of New Hampshire <br/>
         <a href="https://colsa.unh.edu/natural-resources-environment">Department of Natural Resources and the Environment</a> <br/>
-        <a href="https://u.osu.edu/emerge/">EMERGE Biology Integration Institute</a>
+        <a href="https://emerge-bii.github.io/">EMERGE Biology Integration Institute</a>
 
 profile:
   align: right
