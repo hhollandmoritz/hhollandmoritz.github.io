@@ -23,8 +23,8 @@ social: true
 
 ---
 
-I am a post-doctoral researcher at the University of New Hampshire. I use molecular and computational tools to study microbial communities. My research focuses on the environmental conditions which influence community assembly and the molecular mechanisms that underpin community functional traits and how to translate those traits into predictive models. 
+I am a post-doctoral researcher at the University of New Hampshire. I use molecular and computational tools to study  plant-associated and soil microbial communities. My research focuses on the environmental conditions which influence community assembly and the molecular mechanisms that underpin community functional traits. I am  particularly interested in using microbial functional traits in conjunction with community assembly theory to develop more accurate predictive models of carbon release in terrestrial ecosystems.
 
-I'm passionate about science communication, diversity and inclusion in STEM, and teaching computational skills. 
+In addition to my research interests, I'm passionate about science communication, diversity and inclusion in STEM, and lowering barriers to acquisition of computational skills for budding scientists.
 
-Check out my [Twitter](https://twitter.com/hhollandmoritz?lang=en) account. 
+Check out my [Twitter](https://twitter.com/hhollandmoritz?lang=en) account.
