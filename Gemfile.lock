@@ -104,6 +104,7 @@ GEM
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.7.0)
     unicode_utils (1.4.0)
+    webrick (1.7.0)
     zeitwerk (2.4.2)
 
 PLATFORMS
@@ -120,6 +121,7 @@ DEPENDENCIES
   jekyll-twitter-plugin
   jemoji
   unicode_utils
+  webrick (~> 1.7)
 
 BUNDLED WITH
-   2.2.21
+   2.3.18
