@@ -11,6 +11,7 @@ pryears: [2022, 2021, 2020, 2019, 2018, 2014]
 npryears: [2014, 2013]
 ---
 <h3  class="pubyear">In the pipeline</h3>
+*papers submitted, in review and in revision*
 {% bibliography -f prpr %}
 <h3  class="pubyear">Publications</h3>
 <h4  class="pubyear"><i>Peer reviewed</i></h4>
