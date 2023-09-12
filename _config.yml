@@ -4,9 +4,9 @@
 name: Hannah Holland-Moritz
 email: hhollandmoritz@gmail.com # leave blank if you don't want to display mail symbol
 description: > # this means to ignore newlines until "url:"
-  Adventures in microbial ecology. 
+  Adventures in microbial ecology.
 footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. 
+  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. </br>
   Photos not taken by the author or otherwise credited are from <a href="https://unsplash.com" target="_blank">Unsplash</a>. </br>
 
@@ -15,22 +15,27 @@ baseurl:  # the subpath of your site, e.g. /blog/
 last_updated: true # leave blank if you don't want to display last updated
 
 # -----------------------------------------------------------------------------
-# Social integration
+# Social integration (handled by minima)
 # -----------------------------------------------------------------------------
 github_username: hhollandmoritz # your GitHub user name
 twitter_username: hhollandmoritz # your Twitter handle
 linkedin_username: # your LinkedIn user name
-scholar_userid: #zETn5qAAAAAJ # your Google Scholar ID
-orcid_id: # your ORCID ID
+scholar_userid: #zETn5qAAAAAJ&hl # your Google Scholar ID
+orcid_id: #0000-0002-0854-872X # your ORCID ID
 contact_note: >
    To contact me, send an email to: hhollandmoritz AT gmail DOT com
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 
+# Mastodon instances
+# Note: not working yet, need to figure out social media icon
+#mastodon:
+#  - username: hhollandmoritz#
+#    instance: mstdn.science
 # -----------------------------------------------------------------------------
 # CV
 # -----------------------------------------------------------------------------
-CV_file: "/assets/pdf/CVWinter22.pdf"
+CV_file: "/assets/pdf/CVSummer23.pdf"
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -52,7 +57,7 @@ text:
 disqus_shortname: # put your disqus shortname
 
 # Optional features
-show_social_icons:  false
+show_social_icons:  true
 enable_anchorjs:    false
 enable_katex:       true
 
