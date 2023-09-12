@@ -19,7 +19,8 @@ group :jekyll_plugins do
     # allows pdf embedding
     gem 'jekyll-pdf-embed'
     # prevents error in ruby 3.0
-    gem "webrick", "~> 1.7"
+    # gem "webrick", "~> 1.7"
+    gem "webrick", ">=1.7"
 
 
 end

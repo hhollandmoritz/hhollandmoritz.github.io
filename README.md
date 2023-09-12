@@ -101,23 +101,37 @@ $ git merge gh-pages
 ```bash
 $ git push
 ```
-## Other Editing Notes
-### CV file ###
-* To edit the CV page, add the new CV to the "/assets/pdf/" directory and specify it's path in the `CV_file` option in the `_config.yml` file.
-
-### Update headaches ###
+## Troubleshooting Ruby headaches
+### Dependency issues ###
 * If you are receiving dependency notifications on Github about site security, you can update the dependencies in jekyll this way:
 
 ```bash
 git checkout development
 bundle update
-
 ```
 * If that doesn't solve the problem, try adding the update to the Gemfile directly and then running:
 
 ```bash
 bundle install
 ```
+
+### Updated ruby version
+If you recently updated your ruby version, you may find it hard to update your gem file. You may get an error like this:
+```bash
+nokogiri-1.11.7-x86_64-linux requires ruby version < 3.1.dev, >= 2.5, which is incompatible with the current version,
+ruby 3.2.2p53
+```
+To solve the problem, bundle needs to rebuild all the packages with the new ruby version, so change the name of your Gemfile.lock and rerun bundle install.
+```
+mv Gemfile.lock Gemfile.lock.old
+bundle install
+```
+
+Then check to make sure you can generate the preview of the website before deleting the old Gemfile.lock
+
+## Other Editing Notes
+### CV file ###
+* To edit the CV page, add the new CV to the "/assets/pdf/" directory and specify it's path in the `CV_file` option in the `_config.yml` file.
 
 ### Drafts ###
 * To create a blog post, you can design it in the ```_drafts``` folder first. Then when it is ready for real time, move it to the ```_posts``` folder and rename it the publication date first. Then the draft will be published.
