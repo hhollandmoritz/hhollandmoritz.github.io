@@ -9,7 +9,7 @@ description: Educational materials and resources from various projects.
 {% for project in site.teaching %}
 
 {% if project.redirect %}
-<div class="project">
+<div class="projectsgallery">
     <div class="thumbnail">
         <a href="{{ project.redirect }}" target="_blank">
         {% if project.img %}
@@ -27,7 +27,7 @@ description: Educational materials and resources from various projects.
 </div>
 {% else %}
 
-<div class="project ">
+<div class="projectsgallery">
     <div class="thumbnail">
         <a href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">
         {% if project.img %}

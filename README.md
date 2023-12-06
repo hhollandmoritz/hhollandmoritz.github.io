@@ -144,5 +144,10 @@ bundle exec jekyll serve --drafts
 
 * I have also created a new folder called `under_construction` inside the `_drafts` folder. Inside this folder are pages that I'm still working on that are not yet ready for publication in the Teaching and Projects pages. Unfortunately, at this point I haven't been able to figure out how to stop their contents from being displayed in `bundle exec jekyll serve --drafts`. C'est la vie....
 
+
+### Determining how it looks on mobile devices ###
+On firefox you can use Ctrl + Shift + M to mimic a mobile device to see how it will look. Editing the files in the _sass folder can help adjust the appearence of pages.
+
+
 ## Find more information about this theme and the readme here:
 [https://github.com/alshedivat/al-folio](https://github.com/alshedivat/al-folio)
