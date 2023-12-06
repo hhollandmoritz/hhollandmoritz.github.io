@@ -3,9 +3,10 @@ layout: about
 permalink: /
 title: <strong>Hannah</strong> E. Holland-Moritz
 description:
-        Research Scientist, <a href="https://mypages.unh.edu/jernakovich">Ernakovich Lab</a> <br/>
-        University of New Hampshire <br/>
+        Research Scientist, Ernakovich Lab <br/>
+        <a href="https://colsa.unh.edu/soil-biome">Center of Soil Biogeochemistry and Microbial Ecology</a><br/>
         <a href="https://colsa.unh.edu/natural-resources-environment">Department of Natural Resources and the Environment</a> <br/>
+        University of New Hampshire <br/>
         <a href="https://emerge-bii.github.io/">EMERGE Biology Integration Institute</a>
 
 profile:
