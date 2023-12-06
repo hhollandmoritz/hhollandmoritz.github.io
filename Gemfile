@@ -22,7 +22,6 @@ group :jekyll_plugins do
     # gem "webrick", "~> 1.7"
     gem "webrick", ">=1.7"
 
-
 end
 
 
