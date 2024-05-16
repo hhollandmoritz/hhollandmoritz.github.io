@@ -21,6 +21,8 @@ group :jekyll_plugins do
     # prevents error in ruby 3.0
     # gem "webrick", "~> 1.7"
     gem "webrick", ">=1.7"
+    # makes menu lists
+    gem "jekyll-menus"
 
 end
 
