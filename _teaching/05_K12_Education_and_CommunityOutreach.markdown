@@ -7,14 +7,23 @@ img: /assets/img/museum_day_2_square.jpg
 
 I love collaborating with K-12 educators to develop lesson plans and engage with young students. This engagement ranges from organizing continuing education workshops about controversial science topics, to K-12 classroom visits, to running citizen science research projects with teachers.
 
+<div class="img_row">
+    <img class="col one left" src="{{ site.baseurl }}/assets/img/museum_day_2_square.jpg" alt="I hold a cardboard tube out to a child, crayons and other art supplies are on the table below." title="" style="width: 50%;"/>
+    <img class="col two right" src="{{ site.baseurl }}/assets/img/museum_day.jpg" alt="I point out structures on the underside of a tortoise shell." title="example image" style="width: 50%;"/>
+</div>
+<div class="col caption">
+     Leading evolution-themed activities at the annual Darwin Day hosted by CU Boulder's Natural History Museum.
+</div>
+<span>
 Below are some resources I regularly share with K-12 educators in advance of classroom visits. If you are a K-12 educator and want to work together, please reach out!
 
 ### Teaching Permafrost Resources
 
 **Skype a scientist Presentation (for high school students):**
-(Skype a Scientist is an excellent program. If you are a scientist or a teacher, please check it out: [https://www.skypeascientist.com/](https://www.skypeascientist.com/)
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSV3yyYLUHWMOsEmjgf0UfWIZVKmJ5de5j5BRaUDY1oRbEf9BqFD5qyhKWbFE5xjJGigvB-zs_8JuzJ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
+(Skype a Scientist is an excellent program that connects scientists and K-12 educators. If you are a scientist or a teacher, please check it out: [https://www.skypeascientist.com/](https://www.skypeascientist.com/))
+<div class="google-slides-container">
+	<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSV3yyYLUHWMOsEmjgf0UfWIZVKmJ5de5j5BRaUDY1oRbEf9BqFD5qyhKWbFE5xjJGigvB-zs_8JuzJ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
 
 **What is Permafrost? (Article)** - Age range: 6th grade+  [https://climatekids.nasa.gov/permafrost/](https://climatekids.nasa.gov/permafrost/)
 
