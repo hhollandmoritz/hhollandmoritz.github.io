@@ -1,0 +1,159 @@
+/*-- scss:defaults --*/
+
+/* Core palette */
+$primary: #4E9231;
+
+$body-bg: #ffffff;
+$body-color: #666666;
+
+$headings-color: #333333;
+
+$link-color: #4E9231;
+$link-hover-color: #2f641f;
+
+$navbar-bg: #ffffff;
+$navbar-fg: #333333;
+$navbar-hl: #4E9231;
+
+$footer-bg: #333333;
+$footer-fg: #cccccc;
+
+$border-color: #e5e5e5;
+
+$font-family-sans-serif:
+  Helvetica,
+  Arial,
+  sans-serif;
+
+$headings-font-family:
+  Helvetica,
+  Arial,
+  sans-serif;
+
+$font-size-base: 1rem;
+$line-height-base: 1.5;
+
+$border-radius: 0.25rem;
+
+
+/*-- scss:rules --*/
+
+body {
+  background-color: $body-bg;
+  color: $body-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $headings-color;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $link-hover-color;
+  text-decoration: underline;
+}
+
+
+/* Navbar */
+
+.navbar {
+  background-color: $navbar-bg;
+  border-bottom: 1px solid $border-color;
+}
+
+.navbar-title {
+  color: $navbar-fg;
+  font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+  color: $navbar-fg;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: $navbar-hl;
+}
+
+
+/* Footer */
+
+.nav-footer {
+  background-color: $footer-bg;
+  color: $footer-fg;
+}
+
+.nav-footer a {
+  color: #ffffff;
+}
+
+
+/* Homepage */
+
+.home-name {
+  color: #333333;
+  font-weight: 300;
+}
+
+.home-name strong {
+  font-weight: 700;
+}
+
+.home-intro p {
+  color: #666666;
+}
+
+.home-links a {
+  color: #666666;
+}
+
+.home-links a:hover {
+  color: $primary;
+}
+
+
+/* Cards */
+
+.project-card {
+  background: #eeeeee;
+}
+
+.project-card-overlay {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.project-card-overlay h2,
+.project-card-overlay p {
+  color: #ffffff;
+}
+
+
+/* Captions */
+
+.caption,
+figcaption {
+  color: #888888;
+}
+
+
+/* Small details */
+
+hr {
+  border-top-color: #cccccc;
+}
+
+blockquote {
+  border-left: 4px solid $primary;
+  color: #666666;
+}
+
+@import "shared";

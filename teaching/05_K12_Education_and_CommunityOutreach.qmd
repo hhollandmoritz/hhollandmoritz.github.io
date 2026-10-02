@@ -1,8 +1,8 @@
 ---
 layout: page
 title: K12 Education and Community Outreach
-description: 
-img: /assets/img/museum_day_2_square.jpg
+description: ""
+image: /assets/img/museum_day_2_square.jpg
 ---
 
 I love collaborating with K-12 educators to develop lesson plans and engage with young students. This engagement ranges from organizing continuing education workshops about controversial science topics, to K-12 classroom visits, to running citizen science research projects with teachers.

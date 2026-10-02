@@ -1,0 +1,185 @@
+/*-- scss:defaults --*/
+
+/* Core palette */
+$primary: #76b95c;
+
+$body-bg: #181a18;
+$body-color: #c8cbc6;
+
+$headings-color: #f0f1ee;
+
+$link-color: #76b95c;
+$link-hover-color: #9bd184;
+
+$navbar-bg: #181a18;
+$navbar-fg: #e7e9e5;
+$navbar-hl: #76b95c;
+
+$footer-bg: #111211;
+$footer-fg: #b5b8b2;
+
+$border-color: #343734;
+
+$font-family-sans-serif:
+  Helvetica,
+  Arial,
+  sans-serif;
+
+$headings-font-family:
+  Helvetica,
+  Arial,
+  sans-serif;
+
+$font-size-base: 1rem;
+$line-height-base: 1.5;
+
+$border-radius: 0.25rem;
+
+
+/*-- scss:rules --*/
+
+body {
+  background-color: $body-bg;
+  color: $body-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $headings-color;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $link-hover-color;
+  text-decoration: underline;
+}
+
+
+/* Navbar */
+
+.navbar {
+  background-color: $navbar-bg;
+  border-bottom: 1px solid $border-color;
+}
+
+.navbar-title {
+  color: $navbar-fg;
+  font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+  color: $navbar-fg;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: $navbar-hl;
+}
+
+
+/* Footer */
+
+.nav-footer {
+  background-color: $footer-bg;
+  color: $footer-fg;
+}
+
+.nav-footer a {
+  color: #e7e9e5;
+}
+
+
+/* Homepage */
+
+.home-name {
+  color: #f0f1ee;
+  font-weight: 300;
+}
+
+.home-name strong {
+  font-weight: 700;
+}
+
+.home-intro p {
+  color: #c8cbc6;
+}
+
+.home-links a {
+  color: #aeb2ab;
+}
+
+.home-links a:hover {
+  color: $primary;
+}
+
+
+/* Cards */
+
+.project-card {
+  background: #252825;
+}
+
+.project-card-overlay {
+  background: rgba(0, 0, 0, 0.58);
+}
+
+.project-card-overlay h2,
+.project-card-overlay p {
+  color: #ffffff;
+}
+
+
+/* Captions */
+
+.caption,
+figcaption {
+  color: #9ca198;
+}
+
+
+/* Small details */
+
+hr {
+  border-top-color: #3a3e39;
+}
+
+blockquote {
+  border-left: 4px solid $primary;
+  color: #bfc3bc;
+}
+
+
+/* Tables */
+
+table {
+  color: $body-color;
+}
+
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-color: #c8cbc6;
+  --bs-table-border-color: #383b37;
+}
+
+
+/* Code blocks */
+
+pre,
+code {
+  color: #d7dad5;
+}
+
+pre {
+  background-color: #222522;
+  border: 1px solid #343734;
+}
+
+@import "shared";

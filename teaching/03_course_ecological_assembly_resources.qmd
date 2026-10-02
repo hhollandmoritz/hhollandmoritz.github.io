@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Ecology
-description: 
-img: /assets/img/imat-bagja-gumilar-jwTvCQQJXh0-unsplash.jpg
+description: ""
+image: /assets/img/imat-bagja-gumilar-jwTvCQQJXh0-unsplash.jpg
 ---
 
 

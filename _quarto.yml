@@ -1,10 +1,13 @@
 project:
   type: website
+  resources:
+    - "~/.Rproj.user/**"
+  pre-render:
+    - python scripts/generate_publications.py
   output-dir: docs
-
+  
 website:
-  title: "Hannah Holland-Moritz"
-
+  title: ""
   navbar:
     background: primary
     left:
@@ -19,14 +22,23 @@ website:
       - text: "Blog"
         href: posts/index.qmd
       - text: "CV"
-        href: files/CV.pdf
+        href: assets/pdf/CV.pdf
 
     right:
       - icon: github
         href: https://github.com/hhollandmoritz
+  page-footer:
+    center: "Copyright &copy; 2026, Hannah Holland-Moritz,  Photos not taken by the author or otherwise credited are from [Unsplash](https://unsplash.com)."
+    background: secondary
+
 
 format:
   html:
-    theme: styles.scss
+    theme:
+      light: assets/styles/light.scss
+      dark: assets/styles/dark.scss
+    mainfont: Open Sans
     toc: true
     link-external-newwindow: true
+    link-external-icon: false
+    code-annotations: hover

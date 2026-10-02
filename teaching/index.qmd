@@ -1,0 +1,12 @@
+---
+title: "Teaching"
+
+listing:
+  type: grid
+  contents: "*.qmd"
+  template: ../assets/styles/_project-card.ejs.md
+  sort: "order asc"
+  sort-ui: false
+  filter-ui: false
+  fields: [image, title, description]
+---

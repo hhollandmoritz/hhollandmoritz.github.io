@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Modeling in Biology
-description: 
-img: /assets/img/wat21550-fig-0002-m_crop.jpg
+description: ""
+image: /assets/img/wat21550-fig-0002-m_crop.jpg
 ---
 
 

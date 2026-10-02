@@ -4,12 +4,12 @@ _site
 .DS_store
 .ruby-version
 #Gemfile.lock
-vendor/
+_vendor/
 .bundle/
 .jekyll-cache/
 
 hhollandmoritz.github.io.Rproj
-.Rproj.user
+.Rproj.user/*
 .RData
 .Rhistory
 

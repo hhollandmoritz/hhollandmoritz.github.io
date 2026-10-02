@@ -2,7 +2,8 @@
 layout: page
 title: Permafrost Microbiomes
 description: How does thawing permafrost structure microbial communities?
-img: /assets/img/Nice_Mire_Overview_credit_Scott_Saleska2-1024x683.jpg
+image: ../assets/img/Nice_Mire_Overview_credit_Scott_Saleska2-1024x683.jpg
+order: 2
 ---
 
 Our climate is changing rapidly, leading to thawing of the permafrost in northern latitudes. Microbes play important roles in northern soils contributing to carbon storage and release. Understanding the underlying mechanisms that govern whether a permafrost-affected ecosystem will store or release carbon over the long term is critical to our planet's future as the climate warms. 

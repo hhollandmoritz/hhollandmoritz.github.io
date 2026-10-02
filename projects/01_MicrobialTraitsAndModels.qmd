@@ -2,7 +2,8 @@
 layout: page
 title: Modeling Microbial Traits
 description: Improving biogeochemical models with microbial traits
-img: /assets/img/kyker-snowman_etal2021_MIMICS_CN_thumbnail.png
+image: /assets/img/kyker-snowman_etal2021_MIMICS_CN_thumbnail.png
+order: 1
 ---
 I am interested in understanding how and when microbial traits can help improve biogeochemical models of carbon cycling.
 

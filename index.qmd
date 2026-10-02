@@ -1,0 +1,66 @@
+---
+title: ""
+page-layout: full
+toc: false
+listing:
+  id: featured-posts
+  contents: "posts/*.qmd"
+  type: default
+  sort: "date desc"
+  max-items: 3
+  include:
+    featured: true
+  fields: [date, title, description]
+  sort-ui: false
+  filter-ui: false
+---
+
+---
+title: ""
+page-layout: full
+---
+
+::: {.home-hero}
+
+::: {.home-intro}
+
+<h1 class="home-name"><strong>Hannah</strong> E.  Holland-Moritz</h1>
+
+I use molecular and computational tools to study plant-associated and soil microbial communities. My research focuses on the environmental conditions which influence community assembly and the molecular mechanisms that underpin community functional traits. I am particularly interested in using microbial functional traits in conjunction with community assembly theory to develop more accurate predictive models of carbon release in terrestrial ecosystems.
+
+In addition to my research interests, I’m passionate about science communication, diversity and inclusion in STEM, and lowering barriers to acquisition of computational skills for budding scientists.
+
+:::
+
+::: {.home-photo}
+![](assets/img/profile_photo.jpg){.profile-photo}
+:::
+
+## News & Announcements
+
+::: {#featured-posts}
+:::
+
+[View all posts & announcements](posts/index.qmd)
+
+::: {.home-links}
+<div class="home-links">
+  <a href="{{< var profile-links.github >}}"
+     aria-label="GitHub"
+     title="GitHub">
+    <i class="bi bi-github"></i>
+  </a>
+
+  <a href="{{< var profile-links.scholar >}}"
+     aria-label="Google Scholar"
+     title="Google Scholar">
+    <i class="bi bi-mortarboard-fill"></i>
+  </a>
+
+  <a href="{{< var profile-links.linkedin >}}"
+     aria-label="LinkedIn"
+     title="LinkedIn">
+    <i class="bi bi-linkedin"></i>
+  </a>
+</div>
+:::

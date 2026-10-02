@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Bioinformatics and Computational Resources
-description: 
-img: /assets/img/jantine-doornbos-398339-unsplash.jpg
+description: ""
+image: /assets/img/jantine-doornbos-398339-unsplash.jpg
 ---
 Over the years, I have created a number of pipelines, tools, and resources for bioinformatics and computation analyses. Often I begin by creating these tools for myself and end up sharing them with people. The following is a (non-comprehensive) list of links to some of these resources. 
 
