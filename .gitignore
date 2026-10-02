@@ -12,3 +12,6 @@ hhollandmoritz.github.io.Rproj
 .Rproj.user
 .RData
 .Rhistory
+
+/.quarto/
+**/*.quarto_ipynb

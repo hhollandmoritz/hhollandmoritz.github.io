@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Hannah Holland-Moritz"
+
+  navbar:
+    background: primary
+    left:
+      - text: "About"
+        href: index.qmd
+      - text: "Research"
+        href: projects/index.qmd
+      - text: "Publications"
+        href: publications/index.qmd
+      - text: "Teaching"
+        href: teaching/index.qmd
+      - text: "Blog"
+        href: posts/index.qmd
+      - text: "CV"
+        href: files/CV.pdf
+
+    right:
+      - icon: github
+        href: https://github.com/hhollandmoritz
+
+format:
+  html:
+    theme: styles.scss
+    toc: true
+    link-external-newwindow: true
